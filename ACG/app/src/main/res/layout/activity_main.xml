@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:contentDescription="@string/app_name"
+    android:onClick="kliknieto"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.acg.Figura
+                android:id="@+id/figura10"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:background="#FFFEFE"
+                android:contentDescription="@string/kolo"
+                android:onClick="kliknieto" />
+
+            <com.example.acg.Figura
+                android:id="@+id/figura9"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:contentDescription="@string/linia"
+                android:onClick="kliknieto" />
+
+            <com.example.acg.Figura
+                android:id="@+id/figura8"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:contentDescription="@string/luk"
+                android:onClick="kliknieto" />
+
+            <com.example.acg.Figura
+                android:id="@+id/figura5"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="@string/elipsa"
+                android:onClick="kliknieto" />
+
+            <com.example.acg.Figura
+                android:id="@+id/figura6"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:contentDescription="@string/prostokat"
+                android:onClick="kliknieto" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

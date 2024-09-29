@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="kolo">kolo</string>
+    <string name="prostokat">prostokat</string>
+    <string name="elipsa">elipsa</string>
+    <string name="luk">luk</string>
+    <string name="linia">linia</string>
+
+
+</resources>
