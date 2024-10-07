@@ -1,9 +1,13 @@
 package com.antonowicz.przeksztalcenie;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
+import android.util.LruCache;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -70,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
                 int pixelColor = originalBitmap.getPixel(x, y);
-                int newX = Math.min(Math.max(x + random.nextInt(2 * max_roznica + 1) - max_roznica, 0), width - 1);
-                int newY = Math.min(Math.max(y + random.nextInt(2 * max_roznica + 1) - max_roznica, 0), height - 1);
+                int newX = Math.min(Math.max(x + random.nextInt( max_roznica + 1) - max_roznica, 0), width - 1);
+                int newY = Math.min(Math.max(y + random.nextInt(max_roznica + 1) - max_roznica, 0), height - 1);
 
 
                 newBitmap.setPixel(newX, newY, pixelColor);
