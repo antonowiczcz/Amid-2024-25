@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AsyncTask</string>
+    <string name="add_item">Dodaj Nowy Element</string>
+    <string name="product_name">Nazwa Produktu</string>
+    <string name="price">Cena</string>
+    <string name="description">Opis</string>
+    <string name="save">Zapisz</string>
+    <string name="update">Aktualizuj</string>
+</resources>

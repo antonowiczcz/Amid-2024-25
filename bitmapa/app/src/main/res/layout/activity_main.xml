@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="#F5F5F5">
+
+    <!-- Pierwszy rząd przycisków -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KREUJ"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CZYŚĆ"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Drugi rząd przycisków -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LINIE"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/button_ellipses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELIPSY"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/button_rectangles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROSTOKĄTY"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Obszar do rysowania -->
+    <ImageView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF" />
+
+    <!-- Pasek statusowy na dole -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linie"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="#0000FF"
+        android:textColor="#FFFFFF"
+        android:padding="4dp" />
+
+</LinearLayout>
